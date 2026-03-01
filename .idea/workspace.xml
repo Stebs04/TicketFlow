@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e74dc59a-dc17-4f26-b9b0-29cd670a405a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicketFlow/src/main/java/it/ticketflow/dao/BigliettoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/TicketFlow/src/main/java/it/ticketflow/dao/BigliettoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicketFlow/src/main/java/it/ticketflow/dao/UtenteDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/TicketFlow/src/main/java/it/ticketflow/dao/UtenteDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicketFlow/src/main/java/it/ticketflow/ui/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/TicketFlow/src/main/java/it/ticketflow/ui/controller/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicketFlow/src/main/java/it/ticketflow/ui/controller/UserDashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/TicketFlow/src/main/java/it/ticketflow/ui/controller/UserDashboardController.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="37kH2aKTJvZKtb0LbLt12jTh0QQ" />
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="flattenModules" value="true" />
+    <option name="flattenPackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.App.executor": "Run",
+    "Maven.ticketflow [clean].executor": "Run",
+    "Maven.ticketflow [install].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "utility/luca-ui",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/timot/Desktop/ticketflow",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-26cb7f24e5b0-intellij.indexing.shared.core-IU-253.29346.138" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.29346.138" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e74dc59a-dc17-4f26-b9b0-29cd670a405a" name="Changes" comment="" />
+      <created>1767439944041</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1767439944041</updated>
+      <workItem from="1767439946118" duration="115000" />
+      <workItem from="1767440070648" duration="1588000" />
+      <workItem from="1767468332739" duration="236000" />
+      <workItem from="1767468579433" duration="1325000" />
+      <workItem from="1767626506904" duration="508000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
