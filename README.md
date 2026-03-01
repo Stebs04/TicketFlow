@@ -1,5 +1,12 @@
 # TicketFlow 🎬
-**TicketFlow** è una piattaforma desktop moderna per la gestione integrata di cinema multisala. Progettata per essere scalabile e modulare, l'applicazione offre interfacce dedicate per clienti, manager e amministratori, gestendo l'intero ciclo di vita dell'esperienza cinematografica: dalla programmazione del palinsesto all'emissione del biglietto digitale.
+![Java](https://img.shields.io/badge/Language-Java_17-orange?style=flat&logo=java&logoColor=white)
+![JavaFX](https://img.shields.io/badge/GUI-JavaFX_21-blue?style=flat&logo=openjdk&logoColor=white)
+![Maven](https://img.shields.io/badge/Build-Maven-C71A36?style=flat&logo=apachemaven&logoColor=white)
+![SQLite](https://img.shields.io/badge/Database-SQLite-003B57?style=flat&logo=sqlite&logoColor=white)
+![JUnit](https://img.shields.io/badge/Test-JUnit_5-25A162?style=flat&logo=junit5&logoColor=white)
+![IDE](https://img.shields.io/badge/IDE-IntelliJ_IDEA-000000?style=flat&logo=intellij-idea&logoColor=white)
+![UPO](https://img.shields.io/badge/Univ-UPO-red?style=flat)
+<br>**TicketFlow** è una piattaforma desktop moderna per la gestione integrata di cinema multisala. Progettata per essere scalabile e modulare, l'applicazione offre interfacce dedicate per clienti, manager e amministratori, gestendo l'intero ciclo di vita dell'esperienza cinematografica: dalla programmazione del palinsesto all'emissione del biglietto digitale.</br>
 
    **Progetto Universitario**
 <br>Sviluppato per il corso di **Ingegneria del Software**
