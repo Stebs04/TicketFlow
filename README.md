@@ -9,12 +9,12 @@
 ---
 
 ## 📑 Indice
-1. [Panomarica](#Panoramica-🔭)
-2. [Funzionalità chiave](#Funzionalità-chiave-🚀)
-3. [Architettura e Design Patterns](#Architettura-e-Design-Patterns-🏗)
-4. [Stack Tecnologico](#Stack-Tecnologico-🛠)
-5. [Installazione e Avvio](#Installazione-e-Avvio-💻)
-6. [Team di Sviluppo](#Team-di-Sviluppo-👥)
+1. [Panoramica](#panoramica-)
+2. [Funzionalità chiave](#funzionalità-chiave-)
+3. [Architettura e Design Patterns](#architettura-e-design-patterns-)
+4. [Stack Tecnologico](#stack-tecnologico-)
+5. [Installazione e Avvio](#installazione-e-avvio-)
+6. [Team di Sviluppo](#team-di-sviluppo-)
 ---
 
 ## Panoramica 🔭
@@ -78,10 +78,10 @@ Il cuore di TicketFlow è costruito seguendo le best practices dell'ingegneria d
 
 ## Installazione e Avvio 💻
 **Prerequisiti**
-*JDK 17 o superiore installato.
-*Maven 3.x installato.
+* JDK 17 o superiore installato.
+* Maven 3.x installato.
 
-**Passaggi
+**Passaggi**
 1. Clona il repository:
 ```
 git clone https://github.com/tuo-username/TicketFlow.git
