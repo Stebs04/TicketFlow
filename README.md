@@ -17,13 +17,13 @@
 6. [Team di Sviluppo](#Team-di-Sviluppo)
 ---
 
-## 🔭 Panoramica
+## Panoramica 🔭
 TicketFlow risolve le complessità della gestione cinematografica attraverso un'architettura robusta e un'interfaccia utente intuitiva ("User-Centric"). Il sistema permette una gestione granulare delle sale e degli spettacoli, prevenendo sovrapposizioni orarie e garantendo la coerenza dei dati transazionali.
 
 L'applicazione segue rigorosamente il pattern MVC (Model-View-Controller), garantendo una netta separazione tra la logica di business, l'interfaccia grafica e la persistenza dei dati.
 ---
 
-## 🚀 Funzionalità Chiave
+## Funzionalità Chiave 🚀
 Il sistema gestisce tre livelli di utenza con permessi distinti:
 
 👤 **Area Cliente (User)**
@@ -48,7 +48,7 @@ Il sistema gestisce tre livelli di utenza con permessi distinti:
 * Sicurezza: Gestione dei permessi e monitoraggio degli accessi.
 ---
 
-## Architettura e Design Patterns
+## Architettura e Design Patterns 🏗
 Il cuore di TicketFlow è costruito seguendo le best practices dell'ingegneria del software per garantire manutenibilità ed estensibilità.
 
 **Design Patterns Utilizzati:**
@@ -65,7 +65,7 @@ Il cuore di TicketFlow è costruito seguendo le best practices dell'ingegneria d
 * Singleton: Gestione univoca della connessione al database (DbConnection).
 ---
 
-## 🛠Stack Tecnologico
+## Stack Tecnologico 🛠
 |Categoria|Tecnologia|Dettagli|
 |---------|----------|--------|
 |Linguaggio|Java 17|Core logic e Backend|
@@ -76,7 +76,7 @@ Il cuore di TicketFlow è costruito seguendo le best practices dell'ingegneria d
 |Librerie|	SLF4J|	Logging facade|
 ---
 
-## 💻 Installazione e Avvio
+## Installazione e Avvio 💻
 **Prerequisiti**
 *JDK 17 o superiore installato.
 *Maven 3.x installato.
@@ -102,7 +102,7 @@ mvn javafx:run
 - **Nota Database:** Al primo avvio, l'applicazione inizializzerà automaticamente il database SQLite (ticketflow.db) e le relative tabelle tramite la classe SchemaInit.
 ---
 
-## 👥 Team di Sviluppo
+## Team di Sviluppo 👥 
 Progetto realizzato dal gruppo TicketFlow per l'esame di Ingegneria del Software.
 |Nome|Ruolo|Matricola|Focus|
 |----|-----|---------|-----|
