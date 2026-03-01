@@ -21,7 +21,8 @@
 3. [Architettura e Design Patterns](#architettura-e-design-patterns-)
 4. [Stack Tecnologico](#stack-tecnologico-)
 5. [Installazione e Avvio](#installazione-e-avvio-)
-6. [Team di Sviluppo](#team-di-sviluppo-)
+6. [Cosa ho sviluppato](#cosa-ho-sviluppato-)
+7. [Team di Sviluppo](#team-di-sviluppo-)
 ---
 
 ## Panoramica 🔭
@@ -107,6 +108,50 @@ mvn test
 mvn javafx:run
 ```
 - **Nota Database:** Al primo avvio, l'applicazione inizializzerà automaticamente il database SQLite (ticketflow.db) e le relative tabelle tramite la classe SchemaInit.
+---
+
+## Cosa ho sviluppato 👨‍💻
+Di seguito viene riportato l'elenco completo dei file e delle componenti implementate da **Stefano Bellan (Matricola: 20054330)**, suddivisi per livello architetturale.
+
+### 📦 Model (Entità del Dominio)
+Classi che rappresentano i dati fondamentali del sistema:
+* **`Biglietto.java`**: Modello del biglietto con gestione del codice QR temporaneo, dati di emissione e validazione dei campi (fila, colonna, prezzo).
+* **`Cinema.java`**: Anagrafica del cinema (nome, indirizzo, città).
+* **`Film.java`**: Gestione dei dettagli cinematografici (titolo, genere, durata, descrizione) e gestione della locandina.
+* **`Sala.java`**: Modello della sala cinematografica con calcolo automatico della capienza in base a righe e colonne.
+* **`Spettacolo.java`**: Entità centrale della programmazione che unisce Film, Sala e Orario, con gestione del prezzo base e locandina specifica.
+* **`Utente.java`**: Gestione completa del profilo utente, inclusi i dati sensibili (hash password) e i dati di fatturazione opzionali.
+
+### 🗄️ DAO (Data Access Object)
+Classi per l'interazione diretta con il database:
+* **`SalaDAO.java`**: Gestione CRUD completa per le sale, mapping relazionale con Cinema e calcolo capienza persistente.
+* **`SpettacoloDAO.java`**: Gestione complessa del recupero spettacoli tramite JOIN multiple (Spettacolo -> Film -> Sala -> Cinema).
+
+### 🖼️ Views (FXML)
+File descrittivi dell'interfaccia grafica:
+* **`login.fxml`**: Interfaccia di autenticazione utente.
+* **`manager_dashboard.fxml`**: Pannello di controllo per la gestione del cinema, delle sale e della programmazione.
+
+### 🎮 Controllers (Gestione Interfaccia UI)
+Classi di controllo per la logica di presentazione JavaFX:
+* **`LoginController.java`**: Gestione del flusso di autenticazione, validazione credenziali e routing verso la Dashboard corretta (Admin, Manager, User) in base al ruolo.
+* **`ManagerDashboardController.java`**: Controller principale per l'area Manager. Gestisce:
+    * Visualizzazione e modifica degli spettacoli.
+    * Creazione di nuove sale con anteprima visiva.
+    * Visualizzazione statistiche finanziarie (incassi e biglietti).
+    * Upload delle locandine.
+
+### ⚙️ Service & Business Logic
+Logica applicativa implementata all'interno del Facade (`TicketFlowService.java`):
+* **Sezione Logica Manager**: Implementazione dei metodi per la creazione e modifica degli spettacoli.
+* **Controllo Sovrapposizioni**: Sviluppo dell'algoritmo `controllaSovrapposizione` che impedisce la creazione di spettacoli se la sala è già occupata in quella fascia oraria (considerando durata film + tempi di pulizia).
+* **Gestione Sale**: Logica per la creazione e validazione delle sale.
+
+### 🛠️ Utilities & Session Management
+Componenti trasversali di supporto:
+* **`SecurityUtils.java`**: Classe di utilità per la sicurezza, implementa l'hashing delle password tramite algoritmo **SHA-256** e la verifica delle credenziali.
+* **`UserSession.java`**: Implementazione del pattern **Singleton** per mantenere i dati dell'utente loggato accessibili in tutta l'applicazione durante la sessione.
+
 ---
 
 ## Team di Sviluppo 👥 
