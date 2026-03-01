@@ -9,12 +9,12 @@
 ---
 
 ## 📑 Indice
-1. [Panomarica](#Panoramica)
-2. [Funzionalità chiave](#Funzionalità-chiave)
-3. [Architettura e Design Patterns](#Architettura-e-Design-Patterns)
-4. [Stack Tecnologico](#Stack-Tecnologico)
-5. [Installazione e Avvio](#Installazione-e-Avvio)
-6. [Team di Sviluppo](#Team-di-Sviluppo)
+1. [Panomarica](##Panoramica)
+2. [Funzionalità chiave](##Funzionalità-chiave)
+3. [Architettura e Design Patterns](##Architettura-e-Design-Patterns)
+4. [Stack Tecnologico](##Stack-Tecnologico)
+5. [Installazione e Avvio](##Installazione-e-Avvio)
+6. [Team di Sviluppo](##Team-di-Sviluppo)
 ---
 
 ## Panoramica 🔭
