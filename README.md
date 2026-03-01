@@ -1,40 +1,111 @@
-# TicketFlow
+# TicketFlow 🎬
+**TicketFlow** è una piattaforma desktop moderna per la gestione integrata di cinema multisala. Progettata per essere scalabile e modulare, l'applicazione offre interfacce dedicate per clienti, manager e amministratori, gestendo l'intero ciclo di vita dell'esperienza cinematografica: dalla programmazione del palinsesto all'emissione del biglietto digitale.
 
-## 1. Partecipanti al gruppo
-* **Stefano Bellan**
-    * Matricola: 20054330
-    * Data esame scritto prevista: 03/02/2026
-* **Luca Franzon**
-    * Matricola: 20054744
-    * Data esame scritto prevista: 03/02/2026
-* **Timothy Giolito**
-    * Matricola: 20054431
-    * Data esame scritto prevista: 03/02/2026
+   **Progetto Universitario**
+<br>Sviluppato per il corso di **Ingegneria del Software**
+<br>**Università del piemonte orientale**(UPO)
+<br>Anno Accademico 2025/2026</br>
 
-## 2. Descrizione del Progetto
+---
 
-**Nome del progetto:** TicketFlow
+## 📑 Indice
+1. [Panomarica](#Panoramica)
+2. [Funzionalità chiave](#Funzionalità-chiave)
+3. [Architettura e Design Patterns](#Architettura-e-Design-Patterns)
+4. [Stack Tecnologico](#Stack-Tecnologico)
+5. [Installazione e Avvio](#Installazione-e-Avvio)
+6. [Team di Sviluppo](#Team-di-Sviluppo)
+---
 
-**Descrizione dettagliata:**
-TicketFlow è una piattaforma software desktop sviluppata in Java, concepita per la gestione integrata e scalabile di un cinema multisala. Il sistema è progettato per ottimizzare il flusso di lavoro sia per il personale amministrativo che per la clientela finale, garantendo un'esperienza utente fluida grazie a un'interfaccia grafica moderna realizzata con **JavaFX**.
+## 🔭 Panoramica
+TicketFlow risolve le complessità della gestione cinematografica attraverso un'architettura robusta e un'interfaccia utente intuitiva ("User-Centric"). Il sistema permette una gestione granulare delle sale e degli spettacoli, prevenendo sovrapposizioni orarie e garantendo la coerenza dei dati transazionali.
 
-L'architettura del software segue rigorosamente il pattern architetturale **MVC (Model-View-Controller)**, separando nettamente la logica di business, l'interfaccia utente e la gestione dei dati. La persistenza delle informazioni è gestita tramite un database relazionale, interfacciato al software tramite l'utilizzo del **Pattern DAO (Data Access Object)** e **Factory**, che garantiscono modularità e facilità di manutenzione.
+L'applicazione segue rigorosamente il pattern MVC (Model-View-Controller), garantendo una netta separazione tra la logica di business, l'interfaccia grafica e la persistenza dei dati.
+---
 
-Le principali funzionalità del sistema sono suddivise in base ai ruoli utente:
+## 🚀 Funzionalità Chiave
+Il sistema gestisce tre livelli di utenza con permessi distinti:
 
-* **Area Cliente:**
-    * Consultazione del catalogo film e degli orari degli spettacoli.
-    * Processo di prenotazione interattivo con selezione visuale dei posti in sala in tempo reale.
-    * Sistema di calcolo dinamico del prezzo (gestione sconti, es. riduzione studenti).
-    * Simulazione del processo di pagamento elettronico.
+👤 **Area Cliente (User)**
+* Browsing Intelligente: Ricerca avanzata di film per titolo o genere.
 
-* **Area Manager:**
-    * Gestione completa del palinsesto cinematografico (inserimento, modifica e rimozione film).
-    * Configurazione delle sale e programmazione degli orari degli spettacoli.
-    * Monitoraggio dello stato delle prenotazioni.
+* Prenotazione Visuale: Selezione interattiva dei posti in sala con feedback in tempo reale sulla disponibilità.
 
-* **Area Admin:**
-    * Gestione gerarchica degli utenti e dei permessi di accesso.
-    * Supervisione globale del sistema e manutenzione delle anagrafiche.
+* Smart Pricing: Calcolo dinamico del prezzo (es. applicazione automatica sconto studenti tramite Strategy Pattern).
 
-Il progetto è gestito tramite **Maven** per le dipendenze e include una suite di **Unit Test (JUnit)** per verificare la correttezza della logica di business e dei calcoli di prezzo.
+* Pagamento: Simulazione di checkout e pagamento elettronico sicuro.
+
+👔 **Area Manager**
+* Gestione Palinsesto: Creazione, modifica e rimozione degli spettacoli.
+
+* Controllo Integrità: Algoritmo intelligente per la prevenzione di sovrapposizioni ("overlap") di orari nelle sale.
+
+* Gestione Sale: Configurazione della capienza e layout delle sale cinematografiche.
+
+🛡️ **Area Admin**
+* User Management: Supervisione completa delle anagrafiche utenti.
+
+* Sicurezza: Gestione dei permessi e monitoraggio degli accessi.
+---
+
+## Architettura e Design Patterns
+Il cuore di TicketFlow è costruito seguendo le best practices dell'ingegneria del software per garantire manutenibilità ed estensibilità.
+
+**Design Patterns Utilizzati:**
+* MVC (Model-View-Controller): Struttura base del progetto per disaccoppiare la logica dalla UI (JavaFX).
+
+* DAO (Data Access Object): Astrazione completa dell'accesso al database per rendere il codice indipendente dal tipo di storage.
+
+* Factory Method: Utilizzato in DaoFactory per centralizzare la creazione delle istanze DAO.
+
+* Facade: La classe TicketFlowService funge da unico punto di accesso per la logica di business complessa, semplificando le chiamate dai controller.
+
+* Strategy: Implementato nel calcolo dei prezzi (es. ScontoStudenti) per permettere variazioni dinamiche delle tariffe senza modificare il codice core.
+
+* Singleton: Gestione univoca della connessione al database (DbConnection).
+---
+
+## 🛠Stack Tecnologico
+|Categoria|Tecnologia|Dettagli|
+|---------|----------|--------|
+|Linguaggio|Java 17|Core logic e Backend|
+|GUI Framework|JavaFX 21|Interfaccia utente (FXML + CSS)|
+|Build Tool|Maven|	Gestione dipendenze e ciclo di vita|
+|Database|	SQLite	|RDBMS Embedded (nessuna configurazione server richiesta)|
+|Testing|	JUnit 5|	Unit Testing per logica di business|
+|Librerie|	SLF4J|	Logging facade|
+---
+
+## 💻 Installazione e Avvio
+**Prerequisiti**
+*JDK 17 o superiore installato.
+*Maven 3.x installato.
+
+**Passaggi
+1. Clona il repository:
+```
+git clone https://github.com/tuo-username/TicketFlow.git
+cd TicketFlow
+```
+2. Compila il progetto e scarica le dipendenze:
+```
+mvn clean install
+```
+3. Esegui i test (Opzionale ma consigliato):
+```
+mvn test
+```
+4. Avvia l'applicazione:
+```
+mvn javafx:run
+```
+- **Nota Database:** Al primo avvio, l'applicazione inizializzerà automaticamente il database SQLite (ticketflow.db) e le relative tabelle tramite la classe SchemaInit.
+---
+
+## 👥 Team di Sviluppo
+Progetto realizzato dal gruppo TicketFlow per l'esame di Ingegneria del Software.
+|Nome|Ruolo|Matricola|Focus|
+|----|-----|---------|-----|
+|Stefano Bellan|Developer|20054330|Logica Manager, Gestione Sale/Spettacoli|
+|Luca Franzon|Developer|20054744|Gestione Acquisti, Pagamenti, Registrazione|
+|Timothy Giolito|Developer|20054431|Facade Service, Ricerca, Infrastruttura Base|
